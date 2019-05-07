@@ -1,13 +1,8 @@
 {
   "name": "Token Fate",
   "version": "1.0.0",
-  "description": "Randomly selects a token from the selected group by writing its name to chat.",
+  "description": "!token-fate  \rRandomly selects a token from the selected group by writing its name to chat.",
   "authors": "Davemania",
   "roll20userid": "76",
-  "patreon": [],
-  "dependencies": [],
-  "modifies": [],
-  "conflicts": [],
-  "script": "tokenFate.js",
-  "useroptions": []
+  "script": "tokenFate.js"
 }
