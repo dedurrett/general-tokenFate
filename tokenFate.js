@@ -1,7 +1,8 @@
 // Github:   https://github.com/dedurrett/
 // By:       David E. Durrett Jr.
 // Contact:  https://app.roll20.net/users/76/davemania
-
+// API Commands:
+// !token-fate - Execute while you have a group of tokens selected for best results
 var TokenFate = TokenFate || (function() {
     'use strict';
     
