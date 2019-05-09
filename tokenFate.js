@@ -13,7 +13,7 @@ var TokenFate = TokenFate || (function() {
 	checkInstall = function() {
         log('TokenFate v'+version+'  ['+(new Date(lastUpdate*1000))+']');
 	},
-
+// Line Feed character is sometimes replaced at end of line 19: &#10;
     outputSelectedToken = function (tokenName) {
         sendChat("", "/desc ");
         sendChat("", "/direct <div style='width: 100%; color: #D1B280; border: 1px solid #594D46; background-color: #080706; box-shadow: 0 0 15px #594D46; display: block; text-align: center; font-size: 20px; font-weight: bold; padding: 5px 0; margin-bottom: 0.25em; font-family: Garamond; white-space: pre-wrap;'>Fate has chosen:&#10;" + tokenName + "</div>");
@@ -60,7 +60,7 @@ var TokenFate = TokenFate || (function() {
 					})
 					.reject(_.isUndefined)
 					.value();
-				if (msg.selected) {randomSelection(objs);}
+				randomSelection(objs);
 				break;
 		}
     },
