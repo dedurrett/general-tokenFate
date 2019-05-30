@@ -20,7 +20,7 @@ var TokenFate = TokenFate || (function() {
 	},
 // Line Feed character is sometimes replaced at end of line 19: &#10;
     outputSelectedToken = function (tokenName) {
-        sendChat("", "/desc ");
+        if (msgStart=="") { sendChat("", "/desc "); }
         sendChat("", msgStart + "<div style='width: 100%; color: #D1B280; border: 1px solid #594D46; background-color: #080706; box-shadow: 0 0 15px #594D46; display: block; text-align: center; font-size: 20px; font-weight: bold; padding: 5px 0; margin-bottom: 0.25em; font-family: Garamond; white-space: pre-wrap;'>Fate has chosen:&#10;" + tokenName + "</div>");
     },
     
