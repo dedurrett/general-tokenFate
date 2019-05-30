@@ -4,7 +4,7 @@
 // API Commands:
 // !token-fate   - Execute while you have a group of tokens selected for best results
 // !token-fate-w - Execute while you have a group of tokens selected for best results whispered to the GM!
-// Both of the above commands will now accept a single integer argument! Tokens equal to the number passed can now suffer the same fate!
+// Both of the above commands will now accept a single integer or inline roll argument! Tokens equal to the number passed can now suffer the same fate!
 
 var TokenFate = TokenFate || (function() {
     'use strict';
@@ -52,12 +52,26 @@ var TokenFate = TokenFate || (function() {
 		    multiFate=1;
 		}
 	},
-    
+
     handleMessages = function(msg)
     {
 		if('api' !== msg.type ) {
 			return;
 		}
+
+        //This sorcery shamelessly taken from The Aaron's Ammo script
+        if(_.has(msg,'inlinerolls')){
+			msg.content = _.chain(msg.inlinerolls)
+				.reduce(function(m,v,k){
+					m['$[['+k+']]']=v.results.total || 0;
+					return m;
+				},{})
+				.reduce(function(m,v,k){
+					return m.replace(k,v);
+				},msg.content)
+				.value();
+		}
+
 		var args = msg.content.split(/\s+/),
 			objs;
 
@@ -70,7 +84,7 @@ var TokenFate = TokenFate || (function() {
 				msgStart= "/w gm ";
 				break;
 		}
-		
+
 		if (args.length > 1) {
 		    if (Number.isInteger(Number(args[1]))) { 
 		        multiFate=Number(args[1]);
@@ -96,7 +110,7 @@ var TokenFate = TokenFate || (function() {
 		CheckInstall: checkInstall,
 		RegisterEventHandlers: registerEventHandlers
 	};
-    
+
 }());
 
 on('ready',function(){
