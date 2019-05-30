@@ -10,6 +10,7 @@ Wow! Fast. Easy. Impartial.
 ____
 `!token-fate`
 Execute while you have a group of tokens selected for best results
+
 `!token-fate-w`
 Execute while you have a group of tokens selected for best results whispered to the GM!
 
