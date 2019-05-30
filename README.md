@@ -5,8 +5,11 @@ A rollable table with an entry for each party member would work, but sometimes a
 You could roll 1dX, with each result representing a valid option, but then each result needs to be translated for all parties invested before the die is cast.
 
 Now, simply select any number of tokens, and call upon **!token-fate**
+
 Wow! Fast. Easy. Impartial.
+
 >Token Fate will randomly select a token from the selected group on the virtual table top for any nefarious purpose you see fit. The name on the token is given preference, but the name of the represented character will be used if the token has no name of it's own. In the case that a selected token has no name and represents no character, it will be skipped and a new candidate will be selected. If no eligible candidates are found, or if no tokens were selected in the first place, it will output that No Token has been selected.
+
 ____
 `!token-fate`
 Execute while you have a group of tokens selected for best results
