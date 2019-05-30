@@ -5,4 +5,7 @@
   "authors": "Davemania",
   "roll20userid": "76",
   "script": "tokenFate.js"
+  "previousversions": [
+    "1.0.0"
+  ]
 }
