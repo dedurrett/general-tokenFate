@@ -1,6 +1,9 @@
 The goblin reinforcements have arrived with their crude bows at the ready! They scan the caves beyond their bretheren who are engaged in melee. Who will they fire on?
+
 A vicar floats above his acolytes who are being cut down by the infidels on the floor of the chapel below. Dark paralyzing energies granted by his chaotic god have the strength to affect two of the intruders, but which two?
+
 Sometimes a berserker has a choice: who does he pulp with his battleaxe? Often someone has drawn his ire, and an obvious candidate presents themselves. Other times the world at large is his antagonizer, and only Token Fate can decide which individual his wrath will be visited upon.
+
 A rollable table with an entry for each party member would work, but sometimes a subset need to be excluded from fate's fickle gaze.
 You could roll 1dX, with each result representing a valid option, but then each result needs to be translated for all parties invested before the die is cast.
 
